@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #1a1a2e;
     color: #fff;
+    justify-content: center;
+    align-content: center;
 }
 
 header {
@@ -33,14 +35,15 @@ nav ul li a {
 
 .welcome, .about{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 50px 20px;
     background-color: #1a1a2e;    
 }
 
 .welcome-text,.about-text{
-    max-width: 40%;
+    max-width: 45%;
+    text-align: justify;
 }
 
 .welcome-sutitle{
@@ -56,6 +59,7 @@ h1{
 p{
     font-size: 16px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .contact-btn{
@@ -65,6 +69,8 @@ p{
     color: #1a1a2e;
     font-weight: bold;
     cursor: pointer;
+    display: block;
+    margin-top: 15px;
 }
 
 .welcome-image, .about-image{
@@ -73,10 +79,11 @@ p{
     width: 100%;
 }
 
-.welcome-image img{
-    border-radius: 10px;
-    width: 200%;
+.welcome-image img, .about-image img{
+    border-radius: 5px solid #ffd700;
+    width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 
@@ -102,6 +109,7 @@ h2 {
     padding: 20px;
     width: 30%;
     border-radius: 10px;
+    text-align: center;
 }
 
 .service-item img {
@@ -125,6 +133,7 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .portfolio-items img {
@@ -143,6 +152,7 @@ h2 {
 
 .contact-info p {
     margin: 10px 0;
+    text-align: left;
 }
 
 .contact-form textarea {
@@ -153,6 +163,7 @@ h2 {
     padding: 10px;
     color: #fff;
     resize: none;
+    text-align: left;
 }
 
 footer {
